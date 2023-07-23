@@ -1,11 +1,9 @@
 import streamlit as st
 import os
 import cohere
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 api_key = os.getenv("API_KEY")
-
-api_key = "6ba0vjZALYTYTygP6QNAYtAzewm0CXmpLPUHDAd0"
 
 co = cohere.Client(api_key)
 st.title("Blog Content Generator")
