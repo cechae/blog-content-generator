@@ -3,7 +3,7 @@ import os
 import cohere
 from dotenv import load_dotenv
 load_dotenv()
-api_key = st.secrets["COHERE_API_KEY"]
+api_key = st.secrets["key"]
 
 co = cohere.Client(api_key)
 st.title("Blog Content Generator")
