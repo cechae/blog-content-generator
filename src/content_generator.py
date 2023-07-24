@@ -7,6 +7,9 @@ api_key = st.secrets["key"]
 
 co = cohere.Client(api_key)
 st.title("Blog Content Generator")
+st.markdown(
+    "This app generates realistic text conditioned using Cohere's Large Language Model (https://docs.cohere.com/). You can find the code on [GitHub](https://github.com/cechae/blog-content-generator)."
+)
 
 
 with st.form("my_form_3"):
